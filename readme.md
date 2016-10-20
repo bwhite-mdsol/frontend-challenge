@@ -2,7 +2,7 @@
 
 __Objective__
 
-Create an application to track the score of a bowling game. As part of the intervriw process, we will discuss the code provided in this challenge. Do as much as possible in the time you have available to you. 
+Create an application to track the score of a bowling game. As part of the intervriw process, we will discuss the code provided in this challenge. Do as much as possible in the time you have available to you.
 
 __Directions__
 
@@ -52,3 +52,19 @@ they add the next roll to their score.
 The final frame has some special handling. If they player rolls a strike, they roll twice more (but those don't have any special strike handling, they're just added to the total). If the player rolls a spare, they roll once more.
 
 A perfect game (all strikes, and knocking down 10 pins in all rolls on the last frame) is 300 points.
+
+## Using My Solution
+
+- Load index.html in browser
+- Click on player name cells to enter player names
+- Click on roll score cells to open scoring modal
+  - Click on individual roll score, click Submit (Submit disabled until score selected)
+
+### Notes
+
+- Solution is missing validations to
+  - ensure scores are entered in order
+  - enable spare option ('/') only on second roll per frame
+  - disable strike option ('x') when first roll not a strike
+  - only enter score for frame when all rolls complete based on marks, shows partial scores
+- Scoring has been corrected for marks

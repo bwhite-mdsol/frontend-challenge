@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="bowling.css">
+  </head>
 
-  <script src="bowlingscore.js"></script>
-</body>
+  <body>
+    <table class='scorecard'>
+      <tr class='header'>
+        <th class='name'>Player Name</th>
+        <th class='frame'>1</th>
+        <th class='frame'>2</th>
+        <th class='frame'>3</th>
+        <th class='frame'>4</th>
+        <th class='frame'>5</th>
+        <th class='frame'>6</th>
+        <th class='frame'>7</th>
+        <th class='frame'>8</th>
+        <th class='frame'>9</th>
+        <th class='frame'>10</th>
+        <th class='score'>Total Score</th>
+      </tr>
+      <tr class='player' id='1'>
+        <td class='name'></td>
+        <td class='frame'>
+          <span class='frame-score'></span>
+          <div class='score_boxes'>
+            <div class='score_box b2'></div>
+            <div class='score_box b1'></div>
+          </div>
+        </td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'></td>
+        <td class='frame'>
+          <span class='frame-score'></span>
+          <div class='score_boxes'>
+            <div class='score_box b3'></div>
+            <div class='score_box b2'></div>
+            <div class='score_box b1'></div>
+          </div>
+        </td>
+        <td class='score'></td>
+      </tr>
+    </table>
+
+    <div id="scoring" class="modal">
+      <div class="modal-content">
+        <p>Please select the score for this frame:</p>
+        <div class='score_entry'>
+          <span>0</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>X</span>
+          <span>/</span>
+        </div>
+        <div class='buttons'>
+          <button id='submit'>Submit</button>
+          <button id='cancel'>Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="bowlingscore.js"></script>
+    <script src='scorecard.js'></script>
+  </body>
 </html>
