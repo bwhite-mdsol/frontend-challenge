@@ -31,6 +31,9 @@ td {
 .frame {
   width: 70px;
   padding-bottom: 6px;
+}
+
+td.frame {
   vertical-align: bottom;
 }
 
